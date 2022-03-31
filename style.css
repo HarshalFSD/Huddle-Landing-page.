@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+}
+article {
+  margin: 5%;
+  height: auto;
+}
+nav {
+  padding-bottom: 40px;
+}
+nav > img {
+  max-width: 100%;
+  width: 190px;
+  height: auto;
+}
+main {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  gap: 10px;
+}
+main > * {
+  flex: 1;
+}
+main > img {
+  max-width: 100%;
+  width: 650px;
+  height: auto;
+}
+
+.responce {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.responce > h1 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 35px;
+}
+.responce > p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+div.responce > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.btn {
+  width: 150px;
+  cursor: pointer;
+  height: 10%;
+  border-radius: 20px;
+  border: none;
+  font-size: larger;
+  color: hsl(300, 69%, 71%);
+  flex-grow: 0;
+}
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 100px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  main {
+    flex-direction: column;
+  }
+  .responce {
+    padding-left: 0px;
+    align-items: center;
+  }
+  .responce > h1,
+  p {
+    font-size: 25px;
+    text-align: center;
+  }
+  .btn {
+    width: 150px;
+    height: 40px;
+  }
+  .footer > * {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    flex-direction: column;
+  }
+  .responce {
+    padding-left: 0px;
+    align-items: center;
+  }
+  .responce > h1,
+  p {
+    font-size: 25px;
+    text-align: center;
+  }
+  .btn {
+    width: 150px;
+    height: 40px;
+  }
+  .footer > * {
+    font-size: 16px;
+  }
+}
